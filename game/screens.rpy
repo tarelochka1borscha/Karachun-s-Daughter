@@ -62,14 +62,9 @@ style vscrollbar:
 
 style slider:
     ysize gui.slider_size
-    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/horizontal_[prefix_]thumb.png"
-
-style vslider:
-    xsize gui.slider_size
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/vertical_[prefix_]thumb.png"
-
+    left_bar Frame("gui/slider/hover_bar.png", gui.slider_borders, tile=gui.slider_tile)
+    right_bar Frame("gui/slider/idle_bar.png", gui.slider_borders, tile=gui.slider_tile)
+    thumb "gui/slider/[prefix_]thumb.png"
 
 style frame:
     padding gui.frame_borders.padding

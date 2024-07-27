@@ -331,7 +331,6 @@ define gui.slider_borders = Borders(6, 6, 6, 6)
 ## Вертикальные границы.
 define gui.vbar_borders = Borders(6, 6, 6, 6)
 define gui.vscrollbar_borders = Borders(6, 6, 6, 6)
-define gui.vslider_borders = Borders(6, 6, 6, 6)
 
 ## Что делать с непрокручиваемыми полосами прокрутки в интерфейсе. "hide" прячет
 ## их, а None их показывает.
