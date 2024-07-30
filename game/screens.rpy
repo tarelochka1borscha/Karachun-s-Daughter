@@ -222,8 +222,6 @@ style choice_vbox:
 style choice_button is default:
     properties gui.button_properties("choice_button")
 
-style choice_button is hover
-
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
 
