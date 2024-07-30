@@ -127,7 +127,7 @@ define gui.namebox_borders = Borders(15, 7, 15, 7)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
-define gui.namebox_tile = True
+define gui.namebox_tile = False
 
 
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
@@ -211,10 +211,11 @@ define gui.quick_button_text_selected_color = gui.accent_color
 
 define gui.choice_button_width = 950
 define gui.choice_button_height = None
-define gui.choice_button_tile = True
+define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(130, 11, 130, 11)
 define gui.choice_button_text_font = gui.text_font
-define gui.choice_button_text_size = 27
+define gui.choice_button_text_idle_size = 27
+define gui.choice_button_text_hover_size = 30
 define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = '#9E7073'
 define gui.choice_button_text_hover_color = "#ffffff"
