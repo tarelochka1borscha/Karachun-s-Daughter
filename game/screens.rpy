@@ -213,14 +213,16 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    ypos 405
-    yanchor 0.5
+    xalign 0.8
+    ypos 700
+    yanchor 0.2
 
     spacing gui.choice_spacing
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+
+style choice_button is hover
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
@@ -1027,7 +1029,7 @@ screen skip_indicator():
         hbox:
             spacing 9
 
-            text _("Пропускаю")
+            text _("Пропуск текста")
 
             text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
             text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"

@@ -108,32 +108,32 @@ define gui.textbox_yalign = 1.0
 ## Местоположение имени говорящего персонажа по отношению к текстовому окну.
 ## Это могут быть целые значения в пикселях слева и сверху от начала окна или
 ## процентное отношение, например, 0.5 для центрирования.
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 500
+define gui.name_ypos = -20
 
 ## Горизонтальное выравнивание имени персонажа. Это может быть 0.0 для
 ## левоориентированного, 0.5 для центрированного и 1.0 для правоориентированного
 ## выравнивания.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## Ширина, высота и границы окна, содержащего имя персонажа или None, для
 ## автоматической размерки.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 200
+define gui.namebox_height = 70
 
 ## Границы окна, содержащего имя персонажа слева, сверху, справа и снизу по
 ## порядку.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(15, 7, 15, 7)
 
 ## Если True, фон текстового окна будет моститься (расширяться по эффекту
 ## плитки). Если False, фон текстового окна будет фиксированным.
-define gui.namebox_tile = False
+define gui.namebox_tile = True
 
 
 ## Размещение диалога по отношению к текстовому окну. Это могут быть целые
 ## значения в пикселях слева и сверху от текстового окна или процентное
 ## отношение, например, 0.5 для центрирования.
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 300
 define gui.dialogue_ypos = 75
 
 ## Максимальная ширина текста диалога в пикселях.
@@ -209,14 +209,14 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Кнопки выбора используются во внутриигровых меню.
 
-define gui.choice_button_width = 1185
+define gui.choice_button_width = 950
 define gui.choice_button_height = None
-define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(150, 8, 150, 8)
+define gui.choice_button_tile = True
+define gui.choice_button_borders = Borders(130, 11, 130, 11)
 define gui.choice_button_text_font = gui.text_font
-define gui.choice_button_text_size = gui.text_size
+define gui.choice_button_text_size = 27
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
+define gui.choice_button_text_idle_color = '#9E7073'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 
@@ -262,7 +262,7 @@ define gui.skip_ypos = 15
 define gui.notify_ypos = 68
 
 ## Интервал между выборами в меню.
-define gui.choice_spacing = 33
+define gui.choice_spacing = 10
 
 ## Кнопки в секции навигации главного и игрового меню.
 define gui.navigation_spacing = 6
@@ -295,13 +295,13 @@ define gui.frame_borders = Borders(6, 6, 6, 6)
 define gui.confirm_frame_borders = Borders(60, 60, 60, 60)
 
 ## Рамки, используемые в частях экрана пропуска.
-define gui.skip_frame_borders = Borders(24, 8, 75, 8)
+define gui.skip_frame_borders = Borders(50, 18, 75, 19)
 
 ## Рамки, используемые в частях экрана уведомлений.
 define gui.notify_frame_borders = Borders(24, 8, 60, 8)
 
 ## Должны ли фоны рамок моститься?
-define gui.frame_tile = False
+define gui.frame_tile = True
 
 
 ## Панели, Полосы прокрутки и Ползунки #########################################
