@@ -1,4 +1,4 @@
-2024-08-21 02:05:37 UTC
+2024-08-21 02:29:21 UTC
 Windows-10-10.0.22631
 Ren'Py 8.2.3.24061702
 
@@ -12,14 +12,14 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.01s
 Index archives took 0.00s
-Dump and make backups took 0.03s
+Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
+Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -44,205 +44,3 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
 Maximum texture size: 4096x4096
-
-
-      0       0       0       0 start frame
-
-      0       0       0       0 start idle_frame (expensive)
-
-      0       0       0       0 end idle_frame (expensive)
-
-      0       0       0       0 pre wait
-
-   8998    8998       0       0 post wait <Event(769-KEYUP {'scancode': 63, 'key': 1073741887, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
-   8998       0       0       0 start mouse focus handling
-
-   8998       0       0       0 start event handling
-
-   8998       0       0       0 finish event handling
-
-   8998       0       0       0 start of interact while loop
-
-   8998       0       0       0 start idle_frame (expensive)
-
-   8998       0       0       0 end idle_frame (expensive)
-
-   8998       0       0       0 pre wait
-
-  14451    5453       0       0 post wait <Event(32769-UserEvent1 {'code': 0, 'mod': 1})>
-
-  14451       0       0       0 start of interact while loop
-
-  14451       0       0       0 start idle_frame (expensive)
-
-  14451       0       0       0 end idle_frame (expensive)
-
-  14451       0       0       0 pre wait
-
-  15998    1547       0       0 post wait <Event(769-KEYUP {'scancode': 64, 'key': 1073741888, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
-  15998       0       0       0 start mouse focus handling
-
-  15998       0       0       0 start event handling
-
-  15998       0       0       0 finish event handling
-
-  15998       0       0       0 start of interact while loop
-
-  15998       0       0       0 start idle_frame (expensive)
-
-  15998       0       0       0 end idle_frame (expensive)
-
-  15998       0       0       0 pre wait
-
-  15998       0       0       0 post wait <Event(769-KEYUP {'scancode': 65, 'key': 1073741889, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
-  15998       0       0       0 start mouse focus handling
-
-  15998       0       0       0 start event handling
-
-  15998       0       0       0 finish event handling
-
-  15998       0       0       0 start of interact while loop
-
-  15998       0       0       0 start idle_frame (expensive)
-
-  15998       0       0       0 end idle_frame (expensive)
-
-  15998       0       0       0 pre wait
-
-  64453   48455       0       0 post wait <Event(32769-UserEvent1 {'code': 0, 'mod': 1})>
-
-  64453       0       0       0 start of interact while loop
-
-  64453       0       0       0 start idle_frame (expensive)
-
-  64453       0       0       0 end idle_frame (expensive)
-
-  64453       0       0       0 pre wait
-
- 115232   50779       0       0 post wait <Event(32769-UserEvent1 {'code': 0, 'mod': 1})>
-
- 115232       0       0       0 start of interact while loop
-
- 115232       0       0       0 start idle_frame (expensive)
-
- 115232       0       0       0 end idle_frame (expensive)
-
- 115232       0       0       0 pre wait
-
- 148558   33325       0       0 post wait <Event(768-KEYDOWN {'scancode': 65, 'key': 1073741889, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
- 148558       0       0       0 start mouse focus handling
-
- 148558       0       0       0 start event handling
-
- 149559    1001       0       0 start of interact while loop
-
- 149559       0       0       0 start idle_frame (expensive)
-
- 149559       0       0       0 end idle_frame (expensive)
-
- 149559       0       0       0 pre wait
-
- 149559       0       0       0 post wait <Event(32768-UserEvent0 {'modal': False, 'mod': 1})>
-
- 149559       0       0       0 start mouse focus handling
-
- 149559       0       0       0 start event handling
-
- 149559       0       0       0 finish event handling
-
- 149559       0       0       0 start of interact while loop
-
- 149559       0       0       0 start idle_frame (expensive)
-
- 149559       0       0       0 end idle_frame (expensive)
-
- 149559       0       0       0 pre wait
-
- 162998   13439       0       0 post wait <Event(768-KEYDOWN {'scancode': 66, 'key': 1073741890, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
- 162998       0       0       0 start mouse focus handling
-
- 162998       0       0       0 start event handling
-
- 162998       0       0       0 finish event handling
-
- 162998       0       0       0 start of interact while loop
-
- 162998       0       0       0 start idle_frame (expensive)
-
- 162998       0       0       0 end idle_frame (expensive)
-
- 162998       0       0       0 pre wait
-
- 165001    2003       0       0 post wait <Event(32769-UserEvent1 {'code': 0, 'mod': 1})>
-
- 165001       0       0       0 start of interact while loop
-
- 165001       0       0       0 start idle_frame (expensive)
-
- 165001       0       0       0 end idle_frame (expensive)
-
- 165001       0       0       0 pre wait
-
- 179998   14997       0       0 post wait <Event(768-KEYDOWN {'scancode': 63, 'key': 1073741887, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
- 179998       0       0       0 start mouse focus handling
-
- 179998       0       0       0 start event handling
-
- 179998       0       0       0 finish event handling
-
- 179998       0       0       0 start of interact while loop
-
- 179998       0       0       0 start idle_frame (expensive)
-
- 179998       0       0       0 end idle_frame (expensive)
-
- 179998       0       0       0 pre wait
-
- 193304   13307       0       0 post wait <Event(769-KEYUP {'scancode': 66, 'key': 1073741890, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
- 193304       0       0       0 start mouse focus handling
-
- 193304       0       0       0 start event handling
-
- 193304       0       0       0 finish event handling
-
- 193304       0       0       0 start of interact while loop
-
- 193304       0       0       0 start idle_frame (expensive)
-
- 193304       0       0       0 end idle_frame (expensive)
-
- 193304       0       0       0 pre wait
-
- 196998    3694       0       0 post wait <Event(769-KEYUP {'scancode': 63, 'key': 1073741887, 'mod': 1, 'unicode': '', 'repeat': 0, '_suppressed': False})>
-
- 196998       0       0       0 start mouse focus handling
-
- 196998       0       0       0 start event handling
-
- 196998       0       0       0 finish event handling
-
- 196998       0       0       0 start of interact while loop
-
- 196998       0       0       0 start idle_frame (expensive)
-
- 196998       0       0       0 end idle_frame (expensive)
-
- 196998       0       0       0 pre wait
-
- 215017   18019       0       0 post wait <Event(32769-UserEvent1 {'code': 0, 'mod': 1})>
-
- 215017       0       0       0 start of interact while loop
-
- 215017       0       0       0 start draw_screen
-
- 215017       0       0       0 flip
-
- 216018       0       0       0 end frame
-

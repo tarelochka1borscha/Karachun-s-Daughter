@@ -346,22 +346,23 @@ style navigation_button_text:
 screen main_menu():
     tag menu
 
-    add gui.main_menu_background
-
     imagemap:
+        ground gui.main_menu_background
+        hover gui.main_menu_hover
 
-        ground gui.main_menu_hover
-
-        hotspot (0, 0, 0, 0):
+        hotspot (800, 425, 316, 57):
             action NullAction()
 
-        hotspot (0, 0, 0, 0):
+        hotspot (800, 495, 316, 57):
             action NullAction()
 
-        hotspot (0, 0, 0, 0):
+        hotspot (800, 573, 316, 57):
             action NullAction()
 
-        hotspot (0, 0, 0, 0):
+        hotspot (800, 645, 316, 57):
+            action NullAction()
+
+        hotspot (800, 730, 316, 57):
             action NullAction()
 
 

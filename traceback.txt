@@ -1,28 +1,60 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 1297, in script
-    define config.nvl_list_length = gui.nvl_list_length
-  File "game/screens.rpy", line 1297, in <module>
-    define config.nvl_list_length = gui.nvl_list_length
-AttributeError: 'StoreModule' object has no attribute 'nvl_list_length'
+  File "game/screens.rpy", line 346, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 346, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    imagemap:
+Exception: Could not find a ground image for imagemap.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/screens.rpy", line 1297, in script
-    define config.nvl_list_length = gui.nvl_list_length
-  File "C:\Soft\Renpy\renpy\ast.py", line 2222, in execute
-    self.set()
-  File "C:\Soft\Renpy\renpy\ast.py", line 2236, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Soft\Renpy\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 1297, in <module>
-    define config.nvl_list_length = gui.nvl_list_length
-AttributeError: 'StoreModule' object has no attribute 'nvl_list_length'
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Soft\Renpy\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Soft\Renpy\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "C:\Soft\Renpy\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Soft\Renpy\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Soft\Renpy\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Soft\Renpy\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Soft\Renpy\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Soft\Renpy\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Soft\Renpy\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Soft\Renpy\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Soft\Renpy\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Soft\Renpy\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 346, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 346, in execute
+    screen main_menu():
+  File "game/screens.rpy", line 351, in execute
+    imagemap:
+  File "C:\Soft\Renpy\renpy\ui.py", line 1252, in _imagemap
+    ground = pick(ground, ("ground", "idle"), idle)
+  File "C:\Soft\Renpy\renpy\ui.py", line 1250, in pick
+    raise Exception("Could not find a %s image for imagemap." % name[0])
+Exception: Could not find a ground image for imagemap.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.3.24061702
 KarachunsDaughter 1.0
-Wed Aug 21 04:51:45 2024
+Wed Aug 21 05:14:33 2024
