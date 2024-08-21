@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/screens.rpy", line 1297, in script
+    define config.nvl_list_length = gui.nvl_list_length
+  File "game/screens.rpy", line 1297, in <module>
+    define config.nvl_list_length = gui.nvl_list_length
+AttributeError: 'StoreModule' object has no attribute 'nvl_list_length'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/screens.rpy", line 1297, in script
+    define config.nvl_list_length = gui.nvl_list_length
+  File "C:\Soft\Renpy\renpy\ast.py", line 2222, in execute
+    self.set()
+  File "C:\Soft\Renpy\renpy\ast.py", line 2236, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Soft\Renpy\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 1297, in <module>
+    define config.nvl_list_length = gui.nvl_list_length
+AttributeError: 'StoreModule' object has no attribute 'nvl_list_length'
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+KarachunsDaughter 1.0
+Wed Aug 21 04:51:45 2024
