@@ -346,7 +346,23 @@ style navigation_button_text:
 screen main_menu():
     tag menu
 
-    add None
+    add gui.main_menu_background
+
+    imagemap:
+
+        ground gui.main_menu_hover
+
+        hotspot (0, 0, 0, 0):
+            action NullAction()
+
+        hotspot (0, 0, 0, 0):
+            action NullAction()
+
+        hotspot (0, 0, 0, 0):
+            action NullAction()
+
+        hotspot (0, 0, 0, 0):
+            action NullAction()
 
 
 ## Экран игрового меню #########################################################
