@@ -56,16 +56,14 @@ define gui.text_color = '#ffffff'
 define gui.interface_text_color = '#ffffff'
 
 
-## Шрифты и их размеры #########################################################
+## Шрифты
+define gui.text_font = "Whipsmart.ttf" # обычный
+define gui.label_text_font = "Seminaria.ttf" # заголовок
 
-## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.name_text_font = gui.label_text_font
+define gui.interface_text_font = gui.text_font
 
-## Шрифт, используемый именами персонажей.
-define gui.name_text_font = "DejaVuSans.ttf"
 
-## Шрифт, используемый текстом вне игры.
-define gui.interface_text_font = "DejaVuSans.ttf"
 
 ## Размер нормального текста диалога.
 define gui.text_size = 33
@@ -86,14 +84,23 @@ define gui.notify_text_size = 24
 define gui.title_text_size = 75
 
 
-## Главное и игровое меню. #####################################################
+## Стиль кнопок навигации
+define gui.headers_text_size = 36
+define gui.headers_text_font = gui.label_text_font
 
+## Главное и игровое меню. #####################################################
 ## Бэки
 define gui.background = "gui/backgrounds/background.png"
 define gui.dim = "gui/backgrounds/dim.png"
 
-define gui.main_menu_ground = "gui/backgrounds/main_menu_ground.png"
-define gui.main_menu_hover = "gui/backgrounds/main_menu_hover.png"
+define gui.trees = "gui/backgrounds/trees.png"
+
+
+
+
+
+
+
 
 define gui.main_menu_background = gui.background
 

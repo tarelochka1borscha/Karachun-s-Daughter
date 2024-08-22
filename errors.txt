@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 377: 'pagekeys' is not a keyword argument or valid child of the screen statement.
-    pagekeys True
-            ^
+File "game/screens.rpy", line 372: style property None is not known.
+    None
+        ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Fri Aug 23 00:10:20 2024
+Fri Aug 23 02:32:59 2024

@@ -1,37 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 98, in script
-    define gui.main_menu_background = background
-  File "game/gui.rpy", line 98, in script
-    define gui.main_menu_background = background
-  File "game/gui.rpy", line 98, in <module>
-    define gui.main_menu_background = background
-NameError: name 'background' is not defined
+  File "game/script.rpy", line 18, in script
+    e "Вы создали новую игру Ren'Py."
+Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
+Stack was <Layer: 'transient'>
+<Many: <renpy.display.layout.Fixed object at 0x00000000051f89d0>>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Soft\Renpy\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Soft\Renpy\renpy\main.py", line 526, in main
-    renpy.game.context().run(node)
-  File "game/gui.rpy", line 98, in script
-    define gui.main_menu_background = background
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/gui.rpy", line 98, in script
-    define gui.main_menu_background = background
-  File "C:\Soft\Renpy\renpy\ast.py", line 2222, in execute
-    self.set()
-  File "C:\Soft\Renpy\renpy\ast.py", line 2236, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Soft\Renpy\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 98, in <module>
-    define gui.main_menu_background = background
-NameError: name 'background' is not defined
+  File "game/script.rpy", line 18, in script
+    e "Вы создали новую игру Ren'Py."
+  File "C:\Soft\Renpy\renpy\ast.py", line 2560, in execute
+    Say.execute(self)
+  File "C:\Soft\Renpy\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Soft\Renpy\renpy\exports.py", line 1494, in say
+    who(what, *args, **kwargs)
+  File "C:\Soft\Renpy\renpy\character.py", line 1394, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Soft\Renpy\renpy\character.py", line 1045, in do_display
+    display_say(who,
+  File "C:\Soft\Renpy\renpy\character.py", line 741, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Soft\Renpy\renpy\ui.py", line 295, in interact
+    raise Exception("ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?\nStack was " + ('\n'.join([str(item) for item in stack])))
+Exception: ui.interact called with non-empty widget/layer stack. Did you forget a ui.close() somewhere?
+Stack was <Layer: 'transient'>
+<Many: <renpy.display.layout.Fixed object at 0x00000000051f89d0>>
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.3.24061702
 KarachunsDaughter 1.0
-Fri Aug 23 00:23:25 2024
+Fri Aug 23 01:26:21 2024

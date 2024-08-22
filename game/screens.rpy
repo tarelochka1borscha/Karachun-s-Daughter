@@ -24,7 +24,6 @@ style hyperlink_text:
 style gui_text:
     properties gui.text_properties("interface")
 
-
 style button:
     properties gui.button_properties("button")
 
@@ -348,28 +347,31 @@ screen main_menu():
 
     add gui.background
     add gui.dim
-    imagemap:
-        ground gui.main_menu_ground
-        hover gui.main_menu_hover
+    add gui.trees
 
-        hotspot (800, 425, 316, 57):
-            action Start()
+    style_prefix "main"
 
-        hotspot (800, 495, 316, 57):
-            action ShowMenu("load")
+    vbox:
+        xalign 0.5
+        yalign 0.5
 
-        hotspot (800, 573, 316, 57):
-            action ShowMenu("preferences")
+        textbutton _("Новая игра") action Start()
+        if len(renpy.list_slots()) > 0:
+            textbutton _("Продолжить") action FileLoad(renpy.newest_slot(), confirm=False, page="auto", newest=True, slot=True)
+        textbutton _("Настройки") action ShowMenu("preferences")
+        textbutton _("Экстра"):
+            if (True): # условие, что есть хотя бы одно слово в словаре
+                action ShowMenu("extra")
+        textbutton _("Выход") action Quit()
 
-        hotspot (800, 645, 316, 57):
-            action ShowMenu("extra")
+style main_button_text:
+    properties gui.text_properties("headers")
 
-        hotspot (800, 730, 316, 57):
-            action Quit()
 
 ## Экран экстра (словарь, ветка, концовки)
 screen extra():
     tag menu
+
 
     add gui.background
     add gui.dim
