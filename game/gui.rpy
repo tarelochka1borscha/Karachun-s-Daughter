@@ -88,10 +88,14 @@ define gui.title_text_size = 75
 
 ## Главное и игровое меню. #####################################################
 
-## Главное меню
-define gui.main_menu_background = "gui/main_menu/main_menu_background.png"
-define gui.main_menu_hover = "gui/main_menu/main_menu_hover.png"
+## Бэки
+define gui.background = "gui/backgrounds/background.png"
+define gui.dim = "gui/backgrounds/dim.png"
 
+define gui.main_menu_ground = "gui/backgrounds/main_menu_ground.png"
+define gui.main_menu_hover = "gui/backgrounds/main_menu_hover.png"
+
+define gui.main_menu_background = gui.background
 
 
 

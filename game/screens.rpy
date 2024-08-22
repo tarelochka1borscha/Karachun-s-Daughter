@@ -342,28 +342,38 @@ style navigation_button_text:
     properties gui.text_properties("navigation_button")
 
 
-## Экран главного меню #########################################################
+## Экран главного меню
 screen main_menu():
     tag menu
 
+    add gui.background
+    add gui.dim
     imagemap:
-        ground gui.main_menu_background
+        ground gui.main_menu_ground
         hover gui.main_menu_hover
 
         hotspot (800, 425, 316, 57):
-            action NullAction()
+            action Start()
 
         hotspot (800, 495, 316, 57):
-            action NullAction()
+            action ShowMenu("load")
 
         hotspot (800, 573, 316, 57):
-            action NullAction()
+            action ShowMenu("preferences")
 
         hotspot (800, 645, 316, 57):
-            action NullAction()
+            action ShowMenu("extra")
 
         hotspot (800, 730, 316, 57):
-            action NullAction()
+            action Quit()
+
+## Экран экстра (словарь, ветка, концовки)
+screen extra():
+    tag menu
+
+    add gui.background
+    add gui.dim
+
 
 
 ## Экран игрового меню #########################################################
