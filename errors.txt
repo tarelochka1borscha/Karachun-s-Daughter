@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 372: style property None is not known.
-    None
-        ^
+File "game/screens.rpy", line 370: style property Borders is not known.
+    Borders Borders(150, 8, 150, 8)
+           ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Fri Aug 23 02:32:59 2024
+Sat Aug 24 09:02:15 2024

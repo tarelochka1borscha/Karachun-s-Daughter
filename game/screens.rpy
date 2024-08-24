@@ -349,12 +349,12 @@ screen main_menu():
     add gui.dim
     add gui.trees
 
-    style_prefix "main"
+
 
     vbox:
         xalign 0.5
         yalign 0.5
-
+        style_prefix "main"
         textbutton _("Новая игра") action Start()
         if len(renpy.list_slots()) > 0:
             textbutton _("Продолжить") action FileLoad(renpy.newest_slot(), confirm=False, page="auto", newest=True, slot=True)
@@ -364,8 +364,19 @@ screen main_menu():
                 action ShowMenu("extra")
         textbutton _("Выход") action Quit()
 
+style main_button:
+    xalign 0.5
+    yalign 0.5
+    xsize 250
+    ysize 49
+    left_padding 45
+
 style main_button_text:
-    properties gui.text_properties("headers")
+    font gui.label_text_font
+    size gui.headers_text_size
+    xalign 0.5
+    idle_color gui.headers_text_color
+    hover_color gui.headers_hover_text_color
 
 
 ## Экран экстра (словарь, ветка, концовки)

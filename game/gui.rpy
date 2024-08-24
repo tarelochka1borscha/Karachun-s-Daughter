@@ -87,6 +87,11 @@ define gui.title_text_size = 75
 ## Стиль кнопок навигации
 define gui.headers_text_size = 36
 define gui.headers_text_font = gui.label_text_font
+define gui.headers_text_color = "#AEAEAE"
+define gui.headers_hover_text_color = "#ffffff"
+define gui.headers_idle_background = "gui/button/headers_idle_background.png"
+define gui.headers_hover_background = "gui/button/headers_hover_background.png"
+define gui.headers_borders = Borders(27, 5, 27, 5)
 
 ## Главное и игровое меню. #####################################################
 ## Бэки
@@ -173,11 +178,11 @@ define gui.button_width = None
 define gui.button_height = None
 
 ## Границы каждой стороны кнопки в порядке слева, сверху, справа, снизу.
-define gui.button_borders = Borders(6, 6, 6, 6)
+define gui.button_borders = Borders(35, 0, 40, 0)
 
 ## Если True, фон изображения будет моститься. Если False, фон изображения будет
 ## линейно масштабирован.
-define gui.button_tile = False
+define gui.button_tile = True
 
 ## Шрифт, используемый кнопкой.
 define gui.button_text_font = gui.interface_text_font
@@ -193,7 +198,7 @@ define gui.button_text_insensitive_color = gui.insensitive_color
 
 ## Горизонтальное выравнивание текста в кнопке. (0.0 — лево, 0.5 — по центру,
 ## 1.0 — право).
-define gui.button_text_xalign = 0.0
+define gui.button_text_xalign = 0.5
 
 
 ## Эти переменные переписывают настройки различных видов кнопок. Пожалуйста,
@@ -202,9 +207,9 @@ define gui.button_text_xalign = 0.0
 ##
 ## Эти настройки используются стандартным интерфейсом:
 
-define gui.radio_button_borders = Borders(27, 6, 6, 6)
+define gui.radio_button_borders = Borders(30, 6, 30, 6)
 
-define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_borders = Borders(30, 6, 30, 6)
 
 define gui.confirm_button_text_xalign = 0.5
 
