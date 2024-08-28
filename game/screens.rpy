@@ -361,13 +361,13 @@ screen main_menu():
         textbutton _("Настройки") action ShowMenu("preferences")
         textbutton _("Экстра"):
             if (True): # условие, что есть хотя бы одно слово в словаре
-                action ShowMenu("extra")
+                action ShowMenu("glossary")
         textbutton _("Выход") action Quit()
 
 style main_button:
     xalign 0.5
     yalign 0.5
-    
+
     ysize 49
     left_padding 45
 
@@ -381,12 +381,52 @@ style main_button_text:
 
 ## Экран экстра (словарь, ветка, концовки)
 screen extra():
-    tag menu
 
+    key "game_menu" action Return()
+
+    hbox:
+        style_prefix "extra"
+
+        xalign 0.44
+        yalign 0.1
+
+        spacing 6
+
+        textbutton _("<") action Return()
+        textbutton _("Словарь") action ShowMenu("glossary")
+        textbutton _("Бестиарий") action ShowMenu("history")
+        textbutton _("Путь") action ShowMenu("preferences")
+
+
+style extra_button is gui_button
+style extra_button_text is gui_button_text
+
+style extra_button:
+    background None
+
+style extra_button_text:
+    font gui.label_text_font
+
+
+screen glossary():
+    tag menu
 
     add gui.background
     add gui.dim
+    frame:
+        style "glossary_main_frame"
+        hbox:
+            textbutton _("Словарь") action ShowMenu("glossary")
 
+
+    use extra
+
+style glossary_main_frame is empty
+
+style glossary_main_frame:
+    bottom_padding 45
+    top_padding 180
+    left_padding 500
 
 
 ## Экран игрового меню #########################################################
