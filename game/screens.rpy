@@ -367,7 +367,7 @@ screen main_menu():
 style main_button:
     xalign 0.5
     yalign 0.5
-    xsize 250
+    
     ysize 49
     left_padding 45
 

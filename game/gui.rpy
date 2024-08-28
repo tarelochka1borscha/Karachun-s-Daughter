@@ -89,9 +89,7 @@ define gui.headers_text_size = 36
 define gui.headers_text_font = gui.label_text_font
 define gui.headers_text_color = "#AEAEAE"
 define gui.headers_hover_text_color = "#ffffff"
-define gui.headers_idle_background = "gui/button/headers_idle_background.png"
-define gui.headers_hover_background = "gui/button/headers_hover_background.png"
-define gui.headers_borders = Borders(27, 5, 27, 5)
+
 
 ## Главное и игровое меню. #####################################################
 ## Бэки
@@ -178,7 +176,7 @@ define gui.button_width = None
 define gui.button_height = None
 
 ## Границы каждой стороны кнопки в порядке слева, сверху, справа, снизу.
-define gui.button_borders = Borders(35, 0, 40, 0)
+define gui.button_borders = Borders(35, 0, 45, 0)
 
 ## Если True, фон изображения будет моститься. Если False, фон изображения будет
 ## линейно масштабирован.

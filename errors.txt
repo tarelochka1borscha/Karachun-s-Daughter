@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 370: style property Borders is not known.
-    Borders Borders(150, 8, 150, 8)
-           ^
+File "game/screens.rpy", line 370: style property min_xsize is not known.
+    min_xsize 500
+             ^
 
 Ren'Py Version: Ren'Py 8.2.3.24061702
-Sat Aug 24 09:02:15 2024
+Wed Aug 28 13:25:45 2024
